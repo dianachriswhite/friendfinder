@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder</title>
+
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous">
+	</script>
+
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+
+<div class="container">
+
+
+	<h2>Survey Questions</h2>
+	<hr>
+
+	<h3>About You</h3>
+	<br>
+	<h4>Name</h4>
+	<input type="text" name="" id="name" class="form-control" required>
+	<br>
+
+
+	<h3>Question 1</h3>
+	<h4>You don't mind getting dirty in the outdoors</h4>
+	<select data-placeholder="" class="chosen-select" id="q1">
+	<option value ="1">1 Strongly Agree</option>
+	<option value ="2">2</option>
+	<option value ="3">3</option>
+	<option value ="4">4</option>
+	<option value ="5">5 Strongly Disgree</option>
+	</select>
+	<br>
+	<br>
+
+	<h3>Question 2</h3>
+	<h4>You are somewhere between introvert and extrovert.</h4>
+	<select data-placeholder="" class="chosen-select" id="q2">
+	<option value ="1">1 Strongly Agree</option>
+	<option value ="2">2</option>
+	<option value ="3">3</option>
+	<option value ="4">4</option>
+	<option value ="5">5 Strongly Disgree</option>
+	</select>
+	<br>
+	<br>
+
+	<h3>Question 3</h3>
+	<h4>You are a dog person.</h4>
+	<select data-placeholder="" class="chosen-select" id="q3">
+	<option value ="1">1 Strongly Agree</option>
+	<option value ="2">2</option>
+	<option value ="3">3</option>
+	<option value ="4">4</option>
+	<option value ="5">5 Strongly Disgree</option>
+	</select>
+	<br>
+	<br>
+
+	<h3>Question 4</h3>
+	<h4>You are big on eating healthy.</h4>
+	<select data-placeholder="" class="chosen-select" id="q4">
+	<option value ="1">1 Strongly Agree</option>
+	<option value ="2">2</option>
+	<option value ="3">3</option>
+	<option value ="4">4</option>
+	<option value ="5">5 Strongly Disgree</option>
+	</select>
+	<br>
+	<br>
+	<br>
+
+	<input  id="submitt" class="btn btn-primary" type="submit" value="Submit">
+
+<!-- modal -->
+	<div id="modalResults">
+	<div class="modal fade">
+  	<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">This is your new friend</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- modal end -->
+
+
+
+<script type="text/javascript">
+
+	$("#submitt").on("click", function(){
+		$("#modalResults").modal("show");
+	})
+
+</script>
+
+
+
+	
+
+</div>
+</body>
+</html>
